@@ -3,7 +3,7 @@ services:
   db:
     image: mariadb:5
     restart: always
-    volumes : 
+    volumes :
       - mariadb:/var/lib/mysql"
     environment:
       - MYSQL_USER=user

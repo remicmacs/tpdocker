@@ -66,3 +66,9 @@ Facile de transférer ses vars d'env aux containers.
 ## Docker-compose
 
 Orchestration de containers
+
+---
+
+Séance du Lundi 2019-03-25
+
+Séance de TP
