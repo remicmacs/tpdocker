@@ -1,0 +1,19 @@
+version: '3'
+services:
+  mynginx:
+    image: nginx:latest
+    volumes:
+      - nginx-logs:/var/log/nginx/
+    ports:
+      - "8000:80"
+
+  log-tailer:
+    build: .
+    image: my-log-tailer:latest
+    depends_on:
+      - mynginx
+    volumes:
+      - nginx-logs:/var/log/nginx/
+
+volumes:
+  nginx-logs:
